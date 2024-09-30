@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.hero {
+    background-image: url('../images/destin.avif'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2); /* Couche sombre pour améliorer la lisibilité */
+}
+
+.text-hero {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .col-md-4 {
+        padding: 10px;
+    }
+}
+
+.nav-item {
+    margin-right: 30px; 
+}
+
+/* styles.css */
+
+body {
+    background-color: #f8f9fa; /* Couleur de fond douce */
+}
+
+.container {
+    margin: auto; /* Centrer le formulaire */
+    padding: 20px; /* Espacement interne */
+    border-radius: 8px; /* Coins arrondis */
+    background-color: white; /* Fond blanc */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+h2 {
+    color: #007bff; /* Couleur du titre */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    border: none; /* Supprimer la bordure */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+
+
+
+.footer {
+    background-color: #90e3f1;
+    /* Fond sombre pour le pied de page */
+    color: #fff;
+    /* Texte en blanc pour le contraste */
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer_section {
+    width: 100%;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.footer_section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: rgb(156, 112, 101);
+}
+
+.footer_section p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.footer_section a {
+    color: rgb(255, 51, 0);
+    /* Couleur des liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer_section a:hover {
+    text-decoration: underline;
+}

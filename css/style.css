@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif, Arial, Helvetica;
+    background-color: #f8f9fa;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0, 0, 0, 0.3)), url(../images/plat.jpg) no-repeat center center;
+    background-size: cover; 
+    height: 90vh;
+}
+
+.icone {
+    background-color: hsl(28, 76%, 95%);
+    padding: flex;
+    align-items: center;
+    color: #e09353; 
+    margin: 20px 0px 20px 0px;
+    
+    }
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.nav-tabs .nav-link {
+    border-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #343a40;
+}
+
+.text-warning {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#contact {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+#contact .form-label {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1{
+        font-size: 2.5rem;
+    }
+}
+
+h2 {
+    color: #007bff; /* Couleur du titre */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    border: none; /* Supprimer la bordure */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+}
+

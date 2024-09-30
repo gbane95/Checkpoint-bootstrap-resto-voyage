@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue chez Gourmet</title>
+
+    <!--lien pour les fonts family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- lien pour les icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- lien bootstrap-->
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.css">
+
+    <!-- lien css-->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+    <!--barre de navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Restaurant Gourmet</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a-propos">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="voyage.html">Voyage</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--le texte qui est dans la banière-->
+    <section class="hero">
+        <div class="hero-text" style="padding: 20px;">
+            <h1>Découvrez l'Art Culinaire chez Gourmet</h1>
+            <h4>Une expérience gastronomique inoubliable vous attend</h4>
+            <a href="#contact" class="btn btn-outline-light">Reserver une table </a>
+        </div>
+    </section>
+
+    <!-- section icons -->
+    <section class="mb-5 icone">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="text">
+                        <span class="fa fa-truck fs-2 icone mb-2 py-4"></span>
+                        <h5>Livraison gratuite</h5>
+                        <p class="text-secondary">Lorsque la commande est supérieure à 5000f</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <span class="fa fa-phone-volume fs-2 icone mb-2 py-4"></span>
+                        <h5>Assistance 24h/24 et 7j/7</h5>
+                        <p class="text-secondary">Bénéficiez d'un soutien toute la journée</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text">
+                        <span class="fa fa-arrows-rotate fs-2 icone mb-2 py-4"></span>
+                        <h5>Remboursement</h5>
+                        <p class="text-secondary">Obtenez un remboursement dans les 3 jours!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-----------menu des diferents plats------------->
+    <section id="menu" class="mb-5">
+        <div class="container">
+            <div class="mb-4">
+                <ul class="nav nav-underline bg-secondary rounded-2 text-center py-3 text-white">
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-white active" data-bs-toggle="tab" href="#nav-varieté" role="tab"
+                            aria-controls="nav-varieté" aria-selected="true">Variété</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="tab" href="#nav-afrique" role="tab"
+                            aria-controls="nav-afrique" aria-selected="false">Afrique</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" data-bs-toggle="tab" href="#nav-europe" role="tab"
+                            aria-controls="nav-europe" aria-selected="false">Europe</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--Pour afficher les services après cliques sur les menu -->
+            <div class="tab-content" id="myTabContent">
+
+                <!--Ligne de chaque services groupé -->
+
+                <!-- Variété Tab -->
+                <div class="tab-pane fade show active" id="nav-varieté" role="tabpanel" aria-labelledby="nav-varieté">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/coq.webp" class="card-img-top" alt="Coq au Vin">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coq au Vin</h5>
+                                    <p class="card-text text-secondary">Un classique de la cuisine française, le Coq au
+                                        Vin est un poulet mijoté dans du vin rouge...</p>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">7000f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/Jollof Rice.jpeg" class="card-img-top" alt="Jollof Rice">
+                                <div class="card-body">
+                                    <h5 class="card-title">Jollof Rice</h5>
+                                    <p class="card-text text-secondary">Un plat emblématique d'Afrique de l'Ouest, le
+                                        Jollof Rice est un riz parfumé...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">6500f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/Tagine.jpg" class="card-img-top" alt="Tagine">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tagine</h5>
+                                    <p class="card-text text-secondary">Un plat marocain cuit lentement dans un
+                                        récipient en terre cuite...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">5500f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Afrique Tab -->
+                <div class="tab-pane fade" id="nav-afrique" role="tabpanel" aria-labelledby="nav-afrique">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/paella.jpg" class="card-img-top" alt="Paella">
+                                <div class="card-body">
+                                    <h5 class="card-title">Paella</h5>
+                                    <p class="card-text text-secondary">Originaire d'Espagne, la paella est un plat de
+                                        riz coloré...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">6000f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/caviar.jpg" class="card-img-top" alt="Caviar d'aubergine">
+                                <div class="card-body">
+                                    <h5 class="card-title">Caviar d'aubergine</h5>
+                                    <p class="card-text text-secondary">La salade traditionnelle avec du fromage et pain
+                                        frit...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">700f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/img3.jpg" class="card-img-top" alt="Fattouche">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fattouche</h5>
+                                    <p class="card-text text-secondary">Salade libanaise avec légumes frais et pain
+                                        pita...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">700f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Europe Tab -->
+                <div class="tab-pane fade" id="nav-europe" role="tabpanel" aria-labelledby="nav-europe">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/ratatouille.webp" class="card-img-top" alt="Ratatouille">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ratatouille</h5>
+                                    <p class="card-text text-secondary">Un plat de légumes mijotés, typique de la
+                                        cuisine française...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">5000f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/Borscht.jpg" class="card-img-top" alt="Borscht">
+                                <div class="card-body">
+                                    <h5 class="card-title">Borscht</h5>
+                                    <p class="card-text text-secondary">Une soupe traditionnelle d'Europe de l'Est à
+                                        base de betterave...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">4000f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="./images/Gnocchi.jpg" class="card-img-top" alt="Gnocchi">
+                                <div class="card-body">
+                                    <h5 class="card-title">Gnocchi</h5>
+                                    <p class="card-text text-secondary">Des pâtes italiennes à base de pommes de
+                                        terre...</p>
+
+                                </div>
+                                <div class="card-footer d-flex justify-content-between align-items-center">
+                                    <p class="fw-bold">5500f</p>
+                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Commandé</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section à propos de nous -->
+    <section id="a-propos" class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">À propos du Gourmet</h2>
+                    <p class="mb-4">Bienvenue au Gourmet, votre destination gastronomique au cœur de la ville. Depuis
+                        notre ouverture en 2010, nous nous efforçons de créer une expérience culinaire unique, mêlant
+                        saveurs africaines et européennes.</p>
+                    <p class="mb-4">Notre chef étoilé, Marie Dubois, puise son inspiration dans ses voyages à travers le
+                        monde pour créer des plats innovants qui ravissent les papilles de nos clients.</p>
+                    <p class="mb-4">Au Gourmet, nous croyons en l'utilisation d'ingrédients frais et locaux, soutenant
+                        ainsi les producteurs de notre région tout en vous offrant une cuisine de la plus haute qualité.
+                    </p>
+                    <a href="#menu" class="btn btn-primary">Découvrez notre menu</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./images/personne.jpg" alt="Le restaurant Le Gourmet" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section id="contact" class="text-center my-5"></section>
+    <div class="container">
+        <h2>Contactez-Nous</h2>
+        <p>Nous serions ravis de recevoir vos commentaires ou questions. Remplissez le formulaire ci-dessous et nous
+            vous répondrons dans les plus brefs délais.</p>
+
+        <form action="#" method="POST" class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+    </section>
+
+
+    <footer class="text-center bg-body-tertiary">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a data-mdb-ripple-init class="btn btn-link btn-floating btn-lg text-body m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            
+        </div>
+        
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Restaurant Gourmet. Tous droits réservés
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+    <!-------------lien pour le javasript--------->
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
